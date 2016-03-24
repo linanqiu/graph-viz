@@ -1,0 +1,55 @@
+<html>
+<head>
+<style type="text/css">
+#graph {
+  max-width: 700px;
+  height: 400px;
+}
+
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+<script src="js/sigma.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container" id="container">
+  <div class="page-header">
+    <h1>Graph Visualizer</h1>
+    <p class="lead">Visualizes graphs I guess? I'll think of something witty to put here.</p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+      <div id="graph-container">
+        <div id="graph"></div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <form>
+        <div class="form-group">
+          <label for="node-text">Node Text</label>
+          <p class="help-block">Some descriptor depending on assignment.</p>
+          <textarea class="form-control" id="node-text" rows="5" cols="100"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="edge-text">Edge Text</label>
+          <p class="help-block">Some descriptor depending on assignment.</p>
+          <textarea class="form-control" id="edge-text" rows="5" cols="100"></textarea>
+        </div>
+        <!-- <button type="submit" class="btn btn-primary btn-lg btn-block">Redraw</button> -->
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="js/main.js"></script>
+</body>
+
+</html>
